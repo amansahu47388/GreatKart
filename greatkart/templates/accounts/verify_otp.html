@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<section class="section-content padding-y">
+    <div class="card mx-auto" style="max-width:380px; margin-top:40px;">
+        <article class="card-body">
+            <header class="mb-4"><h4 class="card-title">Verify OTP</h4></header>
+            
+            {% include 'includes/alerts.html' %}
+            
+            <form action="{% url 'verify_otp' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter 6-digit OTP" name="otp" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Verify OTP</button>
+                </div>
+            </form>
+            
+            <p class="text-center mt-4">
+                Didn't receive OTP? <a href="{% url 'forgot_password' %}">Request again</a>
+            </p>
+        </article>
+    </div>
+</section>
+{% endblock %} 

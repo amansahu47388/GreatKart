@@ -43,10 +43,8 @@ INSTALLED_APPS = [
     'account',
     'store',
     'carts',
-
-    
-    
-
+    'orders',
+    'admin_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -173,3 +171,14 @@ CSRF_COOKIE_HTTPONLY = False
 # Session Settings
 SESSION_COOKIE_SECURE = False
 SESSION_COOKIE_SAMESITE = None
+
+# # Email Configuration
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'amansahu4388@gmail.com'  # Your Gmail address
+# EMAIL_HOST_PASSWORD = 'qlfekvutcjjpwavn'  # Your Gmail App Password
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+

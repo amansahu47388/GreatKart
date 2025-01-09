@@ -1,22 +1,10 @@
 {% autoescape off %}
-<!DOCTYPE html>
-<html>
-<body>
-    <h1>Welcome to GreatKart!</h1>
-    <h2>Hi {{ user.first_name }},</h2>
-    <p>Please click on the link below to confirm your registration:</p>
-    <p>
-        <a href="{{ protocol }}://{{ domain }}{% url 'activate' uidb64=uid token=token %}">
-            Activate Account
-        </a>
-    </p>
-    <p>If the above link doesn't work, copy and paste this URL in your browser:</p>
-    <p>{{ protocol }}://{{ domain }}{% url 'activate' uidb64=uid token=token %}</p>
-    
-    <p>If you think it's not you, please ignore this email.</p>
-    
-    <p>Thanks,<br>
-    GreatKart Team</p>
-</body>
-</html>
-{% endautoescape %} 
+
+Hi {{user.first_name}},
+
+Please click on below link to confirm your registration.
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+If you think it's not you, please ignore this email.
+
+{% endautoescape %}

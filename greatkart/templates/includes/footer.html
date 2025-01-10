@@ -1,50 +1,76 @@
 
-<!-- ========================= FOOTER ========================= -->
-<footer class="section-footer border-top">
-	<div class="container">
-		<section class="footer-bottom border-top row">
-			<div class="col-md-12 mx-auto">
-				<p class="text-muted text-center" style="margin-bottom: 0px;"> Developed with
-					<i class="fa fa-heart" aria-hidden="true" style="color: #ff0000;"></i>
-					by
-					<a href="https://www.linkedin.com/in/aman-sahu-b79648298/"> Aman Sahu</a>
-				</p>
-				<p class="text-muted text-center">
-					<span class="px-2 text-center">
-						<a href="mailto:amansahu47388@gmail.com;">amansahu473888@gmail.com</a>
-					</span>
-					<span class="px-2 text-center">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						Bhopal, India
-					</span>
-				</p>
+<div>
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h4 class="footer-heading">Greatkart</h4>
+					<div class="footer-underline"></div>
+					<p>
+						GreatKart is an eCommerce website offering products across various categories,
+						with features like user accounts, product reviews, ratings, cart management,
+						orders, payments, and personalized user profiles.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4 class="footer-heading">Quick Links</h4>
+					<div class="footer-underline"></div>
+					<div class="mb-2"><a href="{% url 'home'%}" class="text-white">Home</a></div>
+					<div class="mb-2"><a href="{% url 'dashboard'%}" class="text-white">Dashbord</a></div>	
+					<div class="mb-2"><a href="{% url 'store'%}" class="text-white">Store</a></div>
+					<div class="mb-2"><a href="{% url 'cart'%}" class="text-white">Cart</a></div>
+					
+					
+				</div>
+				<div class="col-md-3">
+					<h4 class="footer-heading">Shop Now</h4>
+					<div class="footer-underline"></div>
+					<div class="mb-2"><a href="{% url 'store'%}" class="text-white">Collections</a></div>
+					<div class="mb-2"><a href="{% url 'store'%}" class="text-white">Trending Products</a></div>
+					<div class="mb-2"><a href="{% url 'store'%}" class="text-white">New Arrivals Products</a></div>
+					<div class="mb-2"><a href="{% url 'store'%}" class="text-white">Featured Products</a></div>
+					<div class="mb-2"><a href="{% url 'cart'%}" class="text-white">Cart</a></div>
+				</div>
+				<div class="col-md-3">
+					<h4 class="footer-heading">Reach Us</h4>
+					<div class="footer-underline"></div>
+					<div class="mb-2">
+						<p>
+							<i class="fa fa-map-marker"></i> #142, Indrapuri Sector C, Raisen road, bhopal, india - 462022
+						</p>
+					</div>
+					<div class="mb-2">
+						<a href="" class="text-white">
+							<i class="fa fa-phone"></i> +91 975-598-3112
+						</a>
+					</div>
+					<div class="mb-2">
+						<a href="" class="text-white">
+							<i class="fa fa-envelope"></i> amansahu47388@gmail.com
+						</a>
+					</div>
+				</div>
 			</div>
-			
-		</section>
-	</div><!-- //container -->
-</footer>
+		</div>
+	</div>
+	<div class="copyright-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<p class=""> &copy; 2025 - GreatKart All rights reserved.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="social-media">
+						Get Connected:
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-1
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function(){
-		$('.thumb a').click(function(e){
-			e.preventDefault();
-			$('.mainImage img').attr('src', $(this).attr("href"));
-		})
-	})
-</script>
-
-</body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

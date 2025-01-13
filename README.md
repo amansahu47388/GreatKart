@@ -18,7 +18,7 @@ GreatKart is an eCommerce application built with Python Django Framework. Some o
 
     _Your configuration should look something like this:_
     ```sh
-    SECRET_KEY=django-insecure-9n_n%!gh!%q4mt+o(7%g-52qv30yeq8%5u%g0w1hn@@ub7ks$z
+    SECRET_KEY=((-(4lnqoo@9lqb=9fjkq@8b6u$di)cd$=)4#gu_9$kjr$3o8v
     DEBUG=True
     EMAIL_HOST=smtp.gmail.com
     EMAIL_PORT=587

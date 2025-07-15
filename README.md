@@ -41,7 +41,13 @@ GreatKart is an eCommerce application built with Python Django Framework. Some o
     python manage.py runserver
     ```
 12. Login to admin panel - (`http://127.0.0.1:8000/securelogin/`)
-13. Add categories, products, add variations, register user, login, place orders and EXPLORE SO MANY FEATURES
+
+14. #### Admin Credentials to login in Django Admin Panel
+
+username - `   amansahu47388@gmail.com       `<br>
+password - `   Aman@9755                  `<br>
+
+14. Add categories, products, add variations, register user, login, place orders and EXPLORE SO MANY FEATURES
 
 
 <!-- [Check Live Demo](http://djangogreatkart.com/) -->
